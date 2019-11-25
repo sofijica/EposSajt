@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    text-align: center;
+}
+
+#container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    overflow: hidden;
+    background-color: red;
+}
+
+#slideshow {
+    height: 100%;
+    width: 100%;
+}
+
+#slideshow img {
+    height: 100%;
+    width: 100%;
+}
+
+#pager {
+    text-align: center;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+}
+
+#pager:hover {
+    opacity: 1;
+}
+
+#prev {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    z-index: 1000;
+}
+
+#next {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    z-index: 1000;
+}
+
+#pager img {
+    margin: 10px 5px;
+    opacity: 0.3;
+}
+
+#pager img:hover {
+    opacity: 1;
+    z-index: 100;
+}
+
+#wrap {
+    background-color: rgba(255, 237, 77, 0.76);
+    height: 100%;
+    width: 100%;
+}
+
+#gornji {
+    background-color: #e60800;
+    font-size: 18px;
+}
+
+#srednji {
+    background-image: url('https://www.beopopust.rs/uploaded_pictures/content/ponude/650x260/neograniceno-vezbanje-uz-kardio-i-konsultacije-sa-trenerima-u-lux-teretani-maydan-fitness-8046.png');
+    background-position: center;
+    width: 100%;
+    height: 175px;
+}
+
+#donji {
+    padding-top: 0px;
+    background-color: #e60800;
+}
+
+.donji {
+    height: 571px;
+    margin: 30px auto;
+    width: 957px;
+}
+
+nav ul {
+    background-color: #e60800;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 237, 77, 0.76);
+    padding: 10px;
+}

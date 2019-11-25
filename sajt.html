@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/style.css" media="screen" />
+
+    <title>Teretana </title>
+    <meta http-equiv: "Content-Language" content: "sr"/>
+    <meta http-equiv: "Content-Type" content: "text/html ; charset:UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="header">
+            <div id="gornji">
+                <img src="images/home.png" /> Svetozara Markovića 23
+                <img src="images/clock1.png" /> Radno Vreme:PON-SUB 09-23h , NED 10-17h
+                <img src="images/mobile2.ico" width="32" height="32" /> +38163 833 2215
+            </div>
+            <div id="gornji1">
+                <script type="text/javascript">
+                    tday = new Array("Nedelja", "Ponedeljak", "Utorak", "Sreda", "Četvrak", "Petak", "Subota");
+                    tmonth = new Array("Januar", "Februar", "Mart", "April", "Maj", "Jun", "Jul", "Avgust",
+                        "Septembar", "Oktobar", "Novembar", "Decembar");
+
+                    function GetClock() {
+                        var d = new Date();
+                        var nday = d.getDay(),
+                            nmonth = d.getMonth(),
+                            ndate = d.getDate(),
+                            nyear = d.getYear();
+                        if (nyear < 1000) nyear += 1900;
+                        var nhour = d.getHours(),
+                            nmin = d.getMinutes(),
+                            nsec = d.getSeconds();
+                        if (nmin <= 9) nmin = "0" + nmin
+                        if (nsec <= 9) nsec = "0" + nsec;
+
+                        document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " +
+                            ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
+                    }
+
+                    window.onload = function () {
+                        GetClock();
+                        setInterval(GetClock, 1000);
+                    }
+                </script>
+                <div id="clockbox"></div>
+
+                <div id="srednji">
+
+                </div>
+
+
+                <div id="donji">
+
+                    <nav>
+
+                        <ul>
+                            <li>
+                                <a href="sajt.html">POČETNA</a>
+                            </li>
+                            <li>
+                                <a href="treninzi.html">TRENINZI</a>
+                            </li>
+                            <li>
+                                <a href="cenovnik.html">CENOVNIK</a>
+                            </li>
+                            <li>
+                                <a href="galerija.html">GALERIJA</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">KONTAKT</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+
+            <div id="container">
+                <!---------------------SLIDER ---------------------->
+                <!--Slider Start Slider Start Slider Start Slider Start-->
+                <div class="bannercontainer responsive">
+                    <div class="banner">
+                        <ul>
+                            <!-- SLIDE 1 -->
+                            <li data-transition="slideleft" data-slotamount="10" data-link="http://www.google.de" data-thumb="images/container/1.jpg">
+                                <img src="images/pocetna/1.jpg" />
+                            </li>
+                            <!-- SLIDE 1 -->
+
+                            <!-- SLIDE 2 -->
+                            <li data-transition="slideleft" data-slotamount="10" data-link="http://www.google.de" data-thumb="images/container/2.jpg">
+                                <img src="images/pocetna/2.jpg" />
+                            </li>
+                            <!-- SLIDE 2 -->
+
+                            <!-- SLIDE 3 -->
+                            <li data-transition="slideleft" data-slotamount="10" data-link="http://www.google.de" data-thumb="images/container/3.jpg">
+                                <img src="images/pocetna/3.jpg" />
+                            </li>
+                            <!-- SLIDE 3 -->
+
+                            <!-- SLIDE 4 -->
+                            <li data-transition="slideleft" data-slotamount="10" data-link="http://www.google.de" data-thumb="images/container/4.jpg">
+                                <img src="images/pocetna/4.jpg" />
+                            </li>
+                            <!-- SLIDE 4 -->
+
+                            <!-- SLIDE 5 -->
+                            <li data-transition="slideleft" data-slotamount="10" data-link="http://www.google.de" data-thumb="images/container/5.jpg">
+                                <img src="images/pocetna/5.jpg" />
+                            </li>
+                            <!-- SLIDE 5 -->
+                        </ul>
+                        <div class="tp-bannertimer"></div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    var tpj = jQuery;
+                    tpj.noConflict();
+                    tpj(document).ready(function () {
+                        if (tpj.fn.cssOriginal != undefined)
+                            tpj.fn.css = tpj.fn.cssOriginal;
+                        tpj('.banner').revolution({
+                            delay: 5000,
+                            startheight: 350,
+                            startwidth: 1017,
+
+                            hideThumbs: 200,
+
+                            thumbWidth: 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                            thumbHeight: 50,
+                            thumbAmount: 5,
+
+                            navigationType: "both", //bullet, thumb, none, both     (No Thumbs In FullWidth Version !)
+                            navigationArrows: "nexttobullets", //nexttobullets, verticalcentered, none
+                            navigationStyle: "round", //round,square,navbar
+
+                            touchenabled: "on", // Enable Swipe Function : on/off
+                            onHoverStop: "on", // Stop Banner Timet at Hover on Slide on/off
+
+                            navOffsetHorizontal: 0,
+                            navOffsetVertical: 20,
+
+                            shadow: 1, //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+                            fullWidth: "on" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+                        });
+                    });
+                </script>
+                <!--Slider End Slider End Slider End Slider End-->
+                <!---------------------SLIDER ---------------------->
+
+            </div>
+
+            <div id="footer" align="center">
+                <div id="footer1">
+
+                    <h4>Postojimo i radimo od 2015. godine, dočekujući svakodnevno veliki broj žena i muškaraca, koji teže ka
+                        tome da budu zadovoljni izgledom svog tela.
+                        U našoj teretani će vam biti zadovoljstvo da vežbate i dovedete vašu liniju i fizičku spremnost do savršenstva.
+                        Savremeno opremljena teretana raspolaže sa 20 profesionalnih sprava za vežbanje i trčanje, uz pomoć
+                        kojih ćete definisati svoje mišiće i oblikovati telo do izgleda o kakvom ste oduvek sanjali. Kompletan
+                        prostor teratane opremljen je centralnim grejanjem za vaš prijatan boravak u istoj tokom cele godine.
+                        Uz neograničeno vreme za trening i vežbanje u teretani "Mišići" postićićete vrhunske rezultate
+                        za veoma kratko vreme.</h4>
+                </div>
+                <div id="footer2">
+                    <p>©Sofija Milenković, Aleksandra Petrović i Anđela Milojević 2019 FON</p>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
